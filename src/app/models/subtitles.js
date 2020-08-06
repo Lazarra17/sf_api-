@@ -1,7 +1,7 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Subtitle = sequelize.define(
-    'subtitle',
+    'Subtitles',
     {
       id: {
         type: DataTypes.INTEGER,

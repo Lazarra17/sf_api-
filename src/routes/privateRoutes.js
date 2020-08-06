@@ -44,6 +44,13 @@ const privateRoutes = {
   'POST /settings/tv-season': 'settings/TvSeasonController.store',
   'PUT /settings/tv-season/:id': 'settings/TvSeasonController.update',
   'DELETE /settings/tv-season/:id': 'settings/TvSeasonController.remove',
+
+  // Movie Filter
+  'GET /movie-filer': 'MovieController.FormFilters',
+
+  //Movie
+  'GET /movies': 'MovieController.getAll',
+  'POST /movies': 'MovieController.store',
 };
 
 module.exports = privateRoutes;

@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('movie_uploads', {
+    return queryInterface.createTable('Movie_pictures', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -20,10 +20,6 @@ module.exports = {
       movie_id: {
         type: Sequelize.INTEGER,
       },
-      is_trailer: {
-        type: Sequelize.BOOLEAN,
-        defaultValue: 0,
-      },
       created_at: {
         allowNull: false,
         type: Sequelize.DATE,
@@ -35,6 +31,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('movie_uploads');
+    return queryInterface.dropTable('Movie_pictures');
   },
 };

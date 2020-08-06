@@ -12,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
       name: DataTypes.STRING,
       size: DataTypes.STRING,
       movie_id: DataTypes.INTEGER,
+      is_trailer: DataTypes.BOOLEAN,
     },
     {}
   );
